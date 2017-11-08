@@ -28,6 +28,8 @@ call plug#begin('~/.vim/plugged')
 	Plug 'mxw/vim-jsx'
     Plug 'yggdroot/indentline'
     Plug 'mhinz/vim-startify'
+    Plug 'chriskempson/tomorrow-theme'
+    Plug 'vitalk/vim-simple-todo'
 
 call plug#end()
 
@@ -36,9 +38,10 @@ map <Leader> t :Tags<CR>
 
 set t_Co=256
 " set background=dark
-colorscheme base16-flat
+colorscheme base16-material-palenight
 " let g: airline_powerline_fonts = 1
-
+syntax on
+let g:jsx_ext_required = 0
 
 map <C-j> <C-W>j
 map <C-k> <C-W>k
@@ -51,7 +54,7 @@ noremap ;h :tabprevious<CR>
 noremap ;l :tabnext<CR>
 
 " M-n create new tab
-nnoremap <Leader>; :tabnew<CR>
+nnoremap <Leader>;t :tabnew<CR>
 " M-c close current tab
 nnoremap ç :tabclose<CR>
 
