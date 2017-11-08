@@ -4,6 +4,7 @@
 # Path to your oh-my-zsh installation.
 export ZSH=/Users/Ronak/.oh-my-zsh
 
+
 # Set name of the theme to load. Optionally, if you set this to "random"
 # it'll load a random theme each time that oh-my-zsh is loaded.
 # See https://github.com/robbyrussell/oh-my-zsh/wiki/Themes
@@ -12,6 +13,11 @@ POWERLEVEL9K_LEFT_PROMPT_ELEMENTS=(context dir vcs)
 POWERLEVEL9K_RIGHT_PROMPT_ELEMENTS=(status root_indicator history time)
 POWERLEVEL9K_BATTERY_VERBOSE=true
 eval "$(rbenv init -)"
+
+#Path to Gradle installation
+export GRADLE_HOME=/usr/local/gradle/gradle-4.2.1
+export PATH=$GRADLE_HOME/bin:$PATH
+
 # Uncomment the following line to use case-sensitive completion.  # CASE_SENSITIVE="true"
 
 # Uncomment the following line to use hyphen-insensitive completion. Case
